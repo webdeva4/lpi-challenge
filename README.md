@@ -51,9 +51,17 @@ _I used [Postman](https://www.getpostman.com) for my testing._
  
  **The database schema you use to implement your solution.**
  _This project's database is comprised of 3 tables
+ 
  users table: stores the id of the user, the name of the user
+ 
  cities table: stores id of the city, the name of the city, the name of the state
+ 
  visits table: stores id of the visit, user_id, and city_id_
+ 
+ There are foreign key constraits on the user_id of the visits table referencing the id in users table
+ 
+ There are foreign key constraits on the city_id of the visits table referencing the id in cities table
+ 
 
  **Installation / implementation instructions for running locally**
  
