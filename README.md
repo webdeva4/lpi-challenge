@@ -10,11 +10,11 @@ You've developed a mobile app that needs to communicate to an API. The API needs
 
 **You may use whatever PHP language, framework, tools, etc. you wish to create the API.**
 _I chose to use Lumen which is [The stunningly fast micro-framework by Laravel](https://lumen.laravel.com)
-I have ot used Lumen before, but it is very close to laravel, minus some of the bells and whistles. I researched a little when I realized i
+I have not used Lumen before, but it is very close to laravel, minus some of the bells and whistles. I researched a little when I realized i
 relied on some of those "bells and whistles". I figured it out.
 I chose SQLite for my Database, which I had not worked with before either, but seemed the right choice for the size of this project_
 
-###Required API endpoints:
+### Required API endpoints:
 1. List all cities in a state
        GET /state/{state}/cities
 2. Allow creating a new visit to a city.
@@ -31,17 +31,17 @@ I chose SQLite for my Database, which I had not worked with before either, but s
 5. Return a list of states the user has visited
        GET /user/{user}/visits/states
 
-_I used [Postman] (https://www.getpostman.com) for my testing._
+_I used [Postman](https://www.getpostman.com) for my testing._
 
 
-####Things To Keep In Mind
+#### Things To Keep In Mind
 ** How should you deal with invalid or improperly formed requests?**
  _I have added checks into the functions to return various HTML status codes, depending on if valid data was entered or not._
 
 
  **How should you handle requests that result in large data sets?**
 
-####Deliverables
+#### Deliverables
  **The source code for your solution.**
  [lpi challenge source](https://github.com/webdeva4/lpi-challenge)
  **The database schema you use to implement your solution.**
