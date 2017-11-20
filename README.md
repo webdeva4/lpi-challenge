@@ -97,3 +97,93 @@ open another terminal window and navigate to the project folder - lpi-challenge/
 ```php artisan migrate```
 
 ```php artisan db:seed```
+
+
+I used Postman for my testing.
+
+### Testing Data
+**Users**
+user_id, name
+1       Eric
+2       Terry
+3       Dee
+4       Mike
+5       Chip
+6       Kavita
+7       Laurie
+
+**Cities**
+
+user_id,  city,         state
+
+1          Milwaukee     WI
+
+2          New Berlin    WI
+
+3          Hartford      WI
+
+4          Madison       WI
+
+5          San Diego     CA
+
+6          San Francisco CA
+
+7          Oakland       CA
+
+8          Portland      OR
+
+9          Eugene        OR
+
+10         Phoenix       AZ
+
+11         Sedona        AZ
+
+12         Tucsan        AZ
+
+13         Arlington     IL
+
+14         Chicago       IL
+
+15         Naperville    IL
+
+
+**Visits**
+
+visit_id, user_id, city_id
+
+1           1          1
+
+2           1          2
+
+3           1          3
+
+4           2          4
+
+5           2          5
+
+6           3          6
+
+7           3          7
+
+10          4          10
+
+11          5          11
+
+12          5          12
+
+13          5          13
+
+14          6          14
+
+15          6          15
+
+16          6          1
+
+17          7          2
+
+18          7          3
+
+19          7          4
+
+20          7          5
+
