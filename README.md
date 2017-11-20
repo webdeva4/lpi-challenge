@@ -1,5 +1,5 @@
 # **Liturgical Publications Coding Challenge**
-###Mission:
+## Mission:
 You've developed a mobile app that needs to communicate to an API. The API needs to allow users to pin areas they've visited throughout the United Sates. Functionality of the API would include:
  Listing cities in a given state.
  Registering a visit to a city by a user.
@@ -34,14 +34,14 @@ I chose SQLite for my Database, which I had not worked with before either, but s
 _I used [Postman](https://www.getpostman.com) for my testing._
 
 
-#### Things To Keep In Mind
+### Things To Keep In Mind
 ** How should you deal with invalid or improperly formed requests?**
  _I have added checks into the functions to return various HTML status codes, depending on if valid data was entered or not._
 
 
  **How should you handle requests that result in large data sets?**
 
-#### Deliverables
+### Deliverables
  **The source code for your solution.**
  [lpi challenge source](https://github.com/webdeva4/lpi-challenge)
  **The database schema you use to implement your solution.**
