@@ -1,4 +1,3 @@
-# Warning: Work in process
 
 # **Liturgical Publications Coding Challenge**
 ## Mission:
