@@ -35,11 +35,12 @@ _I used [Postman](https://www.getpostman.com) for my testing._
 
 
 ### Things To Keep In Mind
-** How should you deal with invalid or improperly formed requests?**
+**How should you deal with invalid or improperly formed requests?**
  _I have added checks into the functions to return various HTML status codes, depending on if valid data was entered or not._
 
 
  **How should you handle requests that result in large data sets?**
+ _The nice thing about starting with a Lumen project is that if your project grows, you can upgrade to Laravel very easily. In Laravel there are ways to better deal with large data sets such as [chunking the results](https://laravel.com/docs/master/queries#chunking-results) into smaller subsets of results._
 
 ### Deliverables
  **The source code for your solution.**
