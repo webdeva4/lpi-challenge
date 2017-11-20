@@ -102,14 +102,23 @@ open another terminal window and navigate to the project folder - lpi-challenge/
 I used Postman for my testing.
 
 ### Testing Data
+
 **Users**
+
 user_id, name
+
 1       Eric
+
 2       Terry
+
 3       Dee
+
 4       Mike
+
 5       Chip
+
 6       Kavita
+
 7       Laurie
 
 **Cities**
