@@ -1,117 +1,108 @@
 <?php
+use App\City;
+use Illuminate\Database\Seeder;
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
-
-class PopulateCities extends Migration
+class CityDatabaseSeeder extends Seeder
 {
     /**
-     * Run the migrations.
+     * Run the database seeds.
      *
      * @return void
      */
-    public function up()
+    public function run()
     {
-        DB::table('cities')->insert([
+        //$this->call('UsersTableSeeder');
+
+        City::create([
                 'city' => 'Milwaukee',
                 'state' =>'WI',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')]
         );
-        DB::table('cities')->insert([
+        City::create([
                 'city' => 'New Berlin',
                 'state' =>'WI',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')]
         );
-        DB::table('cities')->insert([
+        City::create([
                 'city' => 'Hartford',
                 'state' =>'WI',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')]
         );
-        DB::table('cities')->insert([
+        City::create([
                 'city' => 'Madison',
                 'state' =>'WI',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')]
         );
-        DB::table('cities')->insert([
+        City::create([
                 'city' => 'San Diego',
                 'state' =>'CA',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')]
         );
-        DB::table('cities')->insert([
+        City::create([
                 'city' => 'San Francisco',
                 'state' =>'CA',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')]
         );
-        DB::table('cities')->insert([
+        City::create([
                 'city' => 'Oakland',
                 'state' =>'CA',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')]
         );
-        DB::table('cities')->insert([
+        City::create([
                 'city' => 'Portland',
                 'state' =>'OR',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')]
         );
-        DB::table('cities')->insert([
+        City::create([
                 'city' => 'Eugene',
                 'state' =>'OR',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')]
         );
-        DB::table('cities')->insert([
+        City::create([
                 'city' => 'Phoenix',
                 'state' =>'AZ',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')]
         );
-        DB::table('cities')->insert([
+        City::create([
                 'city' => 'Sedona',
                 'state' =>'AZ',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')]
         );
-        DB::table('cities')->insert([
+        City::create([
                 'city' => 'Tucsan',
                 'state' =>'AZ',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')]
         );
-        DB::table('cities')->insert([
+        City::create([
                 'city' => 'Arlington',
                 'state' =>'IL',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')]
         );
-        DB::table('cities')->insert([
+        City::create([
                 'city' => 'Chicago',
                 'state' =>'IL',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')]
         );
-        DB::table('cities')->insert([
+        City::create([
                 'city' => 'Naperville',
                 'state' =>'IL',
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')]
         );
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        //
+    
     }
 }
