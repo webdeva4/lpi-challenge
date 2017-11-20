@@ -70,6 +70,8 @@ Add ```~/.composer/vendor/bin``` to $PATH if not already there
 
 Install Lumen using composer:
 
+Navigate to lpi-challenge/public folder
+
 ```composer global require "laravel/lumen-installer"```
 
 ```composer install```
@@ -98,8 +100,25 @@ open another terminal window and navigate to the project folder - lpi-challenge/
 
 ```php artisan db:seed```
 
+Test Data is now loaded
 
-I used Postman for my testing.
+
+       GET /state/{state}/cities
+       
+       POST /user/{user}/visits
+       
+             {
+               "city": "Milwaukee",
+               "state": "WI"
+             }
+             
+       DEL /visit/{visit}
+       
+       GET /user/{user}/visits
+       
+       GET /user/{user}/visits/states
+
+_I used [Postman](https://www.getpostman.com) for my testing._
 
 ### Testing Data
 
