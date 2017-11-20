@@ -42,7 +42,9 @@ _I used [Postman](https://www.getpostman.com) for my testing._
 
 
  **How should you handle requests that result in large data sets?**
- _The nice thing about starting with a Lumen project is that if your project grows, you can upgrade to Laravel very easily. In Laravel there are ways to better deal with large data sets such as [chunking the results](https://laravel.com/docs/master/queries#chunking-results) into smaller subsets of data and working with one chunk at a time._
+ _The nice thing about starting with a Lumen project is that if your project grows, you can upgrade to Laravel very easily. In Laravel there are ways to better deal with large data sets such as [chunking the results](https://laravel.com/docs/master/queries#chunking-results) into smaller subsets of data and working with one chunk at a time.
+ This makes for a very scalable project._
+
 
 ### Deliverables
  **The source code for your solution.**
