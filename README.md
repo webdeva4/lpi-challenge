@@ -36,15 +36,16 @@ _I used [Postman](https://www.getpostman.com) for my testing._
 
 ### Things To Keep In Mind
 **How should you deal with invalid or improperly formed requests?**
- _I have added checks into the functions to return various HTML status codes, depending on if valid data was entered or not._
+ _I have added checks into the functions to return various HTML status codes, depending on if valid data was entered or not. I made sure that if ids were being entered that they are all numbers otherwise success is not returned._
 
 
  **How should you handle requests that result in large data sets?**
- _The nice thing about starting with a Lumen project is that if your project grows, you can upgrade to Laravel very easily. In Laravel there are ways to better deal with large data sets such as [chunking the results](https://laravel.com/docs/master/queries#chunking-results) into smaller subsets of results._
+ _The nice thing about starting with a Lumen project is that if your project grows, you can upgrade to Laravel very easily. In Laravel there are ways to better deal with large data sets such as [chunking the results](https://laravel.com/docs/master/queries#chunking-results) into smaller subsets of data and working with one chunk at a time._
 
 ### Deliverables
  **The source code for your solution.**
  [lpi challenge source](https://github.com/webdeva4/lpi-challenge)
+ 
  **The database schema you use to implement your solution.**
  _This project's database is comprised of 3 tables
  users table: stores the id of the user, the name of the user
@@ -52,8 +53,44 @@ _I used [Postman](https://www.getpostman.com) for my testing._
  visits table: stores id of the visit, user_id, and city_id_
 
  **Installation / implementation instructions for running locally**
+ 
+ **Work done on Mac OS X**
+ 
+Create local folder for project – lpi-challenge, cd lpi-challenge
 
- Any additional documentation you feel is necessary to explain how your application works, or describe your thought process and design decisions.
+```git clone https://github.com/webdeva4/lpi-challenge.git```
 
-Bonus Points
- Handle authentication of users prior to allowing changes to their visits
+Download [composer](https://getcomposer.org/download), if you don’t have it
+
+Add ```~/.composer/vendor/bin``` to $PATH if not already there
+
+Install Lumen using composer:
+
+```composer global require "laravel/lumen-installer```
+
+```composer create-project –prefer-dist Laravel/lumen lpi-challenge```
+
+Copy example.env to .env
+
+Install [sqlite](https://www.sqlite.org/download.html):
+
+```sudo apt-get install php7.1-sqlite3```
+
+Create new database:
+
+```touch database/database.sqlite```
+
+create lumen project in lpi-challenge folder:
+
+```lumen new public```
+
+```cd public```
+
+start server:
+```php -S localhost:8080 -t public``` in one terminal window
+
+open another terminal window and get to the project folder - lpi-challenge
+
+```php artisan migrate```
+
+```php artisan db:seed```
