@@ -90,7 +90,7 @@ start server from public folder:
 
 Navigate to public folder
 
-```php -S localhost:8080 -t public/``` in one terminal window
+```php -S localhost:8000 -t public/``` in one terminal window
 
 open another terminal window and navigate to the project folder - lpi-challenge/public
 
