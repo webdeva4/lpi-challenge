@@ -79,7 +79,8 @@ Install Lumen using composer:
 Install [sqlite](https://www.sqlite.org/download.html), if needed
 
 Create database:
-sqlite3 lpi
+
+```touch database/database.sqlite```
 
 Navigate to public folder
 
