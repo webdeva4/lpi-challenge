@@ -60,7 +60,7 @@ _I used [Postman](https://www.getpostman.com) for my testing._
  
  **Work done on Mac OS X**
  
-Create local folder for project – lpi-challenge, cd lpi-challenge
+Navigate to folder where you want to install project 
 
 ```git clone https://github.com/webdeva4/lpi-challenge.git```
 
@@ -70,30 +70,28 @@ Add ```~/.composer/vendor/bin``` to $PATH if not already there
 
 Install Lumen using composer:
 
-```composer global require "laravel/lumen-installer```
+```composer global require "laravel/lumen-installer"```
 
-```composer create-project –prefer-dist Laravel/lumen lpi-challenge```
+```composer install```
+
+```composer dump-autoload```
+
+Install [sqlite](https://www.sqlite.org/download.html), if needed
+
+Create database:
+sqlite3 lpi
+
+Navigate to public folder
 
 Copy example.env to .env
 
-Install [sqlite](https://www.sqlite.org/download.html):
+start server from public folder:
 
-```sudo apt-get install php7.1-sqlite3```
+Navigate to public folder
 
-Create new database:
-
-```touch database/database.sqlite```
-
-create lumen project in lpi-challenge folder:
-
-```lumen new public```
-
-```cd public```
-
-start server:
 ```php -S localhost:8080 -t public``` in one terminal window
 
-open another terminal window and get to the project folder - lpi-challenge
+open another terminal window and navigate to the project folder - lpi-challenge/public
 
 ```php artisan migrate```
 
