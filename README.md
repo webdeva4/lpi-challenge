@@ -1,5 +1,5 @@
 
-# **Liturgical Publications Coding Challenge**
+# ** Coding Challenge**
 ## Mission:
 You've developed a mobile app that needs to communicate to an API. The API needs to allow users to pin areas they've visited throughout the United Sates. Functionality of the API would include:
  Listing cities in a given state.
@@ -11,8 +11,7 @@ You've developed a mobile app that needs to communicate to an API. The API needs
 
 **You may use whatever PHP language, framework, tools, etc. you wish to create the API.**
 _I chose to use Lumen which is [The stunningly fast micro-framework by Laravel](https://lumen.laravel.com)
-I have not used Lumen before, but it is very close to laravel, minus some of the bells and whistles. I researched a little when I realized i
-relied on some of those "bells and whistles". I figured it out.
+I have not used Lumen before, but it is very close to laravel, minus some of the bells and whistles. I researched a little when I realized i relied on some of those "bells and whistles". I figured it out.
 I chose SQLite for my Database, which I had not worked with before either, but seemed the right choice for the size of this project_
 
 ### Required API endpoints:
